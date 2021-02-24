@@ -1,13 +1,54 @@
 
 
+/* Navigation */
 nav ul li {
   display: inline-block;
 }
 
+
+/* Typography */
 h1 {
   color: red;
 }
 
 p {
-  color: green;
+  color: black;
+}
+
+
+/* Images */
+img {
+  width: 100%;
+}
+
+
+/* Layout */
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.1fr;
+  grid-template-areas:
+    "header header top-nav"
+    "side-nav main main"
+    "side-nav main main"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.top-nav {
+  grid-area: top-nav;
+}
+
+.side-nav {
+  grid-area: side-nav;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
 }

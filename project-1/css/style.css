@@ -1,15 +1,16 @@
 
 
 
+/* Twitter Icon */
+
 /* CSS Grid Layout */
 .container {
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 0.1fr;
   grid-template-areas:
-    "header header top-nav"
-    "side-nav main main"
-    "side-nav main main"
-    "footer footer footer";
+    "header header top-nav ."
+    "side-nav main main ."
+    ". footer footer .";
 }
 
 .header {
@@ -40,8 +41,24 @@ img {
   width: 100%;
 }
 
+/* Card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
 
-/* Navigation */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.card-text {
+  padding: 8px 16px;
+}
+
+/* Navigation & Social Media */
+top-nav {
+  align-items: right;
+}
 top-nav ul li {
   display: inline-block;
 }
@@ -50,9 +67,14 @@ foot-nav ul li {
   display: inline-block;
 }
 
+
 /* Typography */
 h1 {
-  color: red;
+  color: crimson;
+}
+
+p1 {
+  color: maroon;
 }
 
 p {

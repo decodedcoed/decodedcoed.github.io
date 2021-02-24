@@ -1,28 +1,7 @@
 
 
-/* Navigation */
-nav ul li {
-  display: inline-block;
-}
 
-
-/* Typography */
-h1 {
-  color: red;
-}
-
-p {
-  color: black;
-}
-
-
-/* Images */
-img {
-  width: 100%;
-}
-
-
-/* Layout */
+/* CSS Grid Layout */
 .container {
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 0.1fr;
@@ -52,3 +31,33 @@ img {
 .footer {
   grid-area: footer;
 }
+
+/* Flexbox */
+
+/* Components: images, image captions, card, buttons */
+/* Images */
+img {
+  width: 100%;
+}
+
+
+/* Navigation */
+top-nav ul li {
+  display: inline-block;
+}
+
+foot-nav ul li {
+  display: inline-block;
+}
+
+/* Typography */
+h1 {
+  color: red;
+}
+
+p {
+  color: black;
+}
+
+
+/* Media Queries */

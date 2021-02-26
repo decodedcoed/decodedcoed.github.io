@@ -4,9 +4,9 @@
 /* Twitter Icon */
 
 /* CSS Grid Layout */
-.container {
+.grid-container {
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 0.1fr;
+  grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
   grid-template-areas:
     "header header top-nav ."
     "side-nav main main ."
@@ -35,6 +35,12 @@
 
 /* Flexbox */
 
+.flex-container {
+  display: flex;
+  flex: 0 1 10%;
+  justify-content: space-between;
+}
+
 /* Components: images, image captions, card, buttons */
 /* Images */
 img {
@@ -43,12 +49,13 @@ img {
 
 /* Card */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  padding: 10px;
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.4);
   transition: 0.3s;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  box-shadow: 0 24px 24px 0 rgba(0,0,0,0.4);
 }
 
 .card-text {

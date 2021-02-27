@@ -8,7 +8,8 @@
   display: grid;
   grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
   grid-template-areas:
-    "header header top-nav ."
+    "header header . ."
+    ". . top-nav top-nav"
     "side-nav main main ."
     ". footer footer .";
 }
@@ -41,10 +42,21 @@
   justify-content: space-between;
 }
 
+/* Position */
+.fixed {
+  position: fixed;
+  background-color: white;
+  opacity: 1;
+}
+
 /* Components: images, image captions, card, buttons */
 /* Images */
 img {
   width: 100%;
+}
+
+.elipse-frame {
+  border-radius: 60%;
 }
 
 /* Card */
@@ -59,12 +71,17 @@ img {
 }
 
 .card-text {
-  padding: 8px 16px;
+  padding: 8px 12px;
 }
 
+.featured-card {
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.4);
+}
 /* Navigation & Social Media */
 top-nav {
   align-items: right;
+  display; block
+  background-color: black;
 }
 top-nav ul li {
   display: inline-block;

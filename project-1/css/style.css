@@ -37,6 +37,7 @@ header {
   align-items: baseline;
   background-color: white;
   opacity: 1;
+  border-bottom:
 }
 
 .push-left {
@@ -60,6 +61,8 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
+  right: 0;
 }
 
 /* Components: images, image captions, card, buttons */
@@ -69,7 +72,7 @@ img {
 }
 
 .elipse-frame {
-  border-radius: 60%;
+  border-radius: 20%;
 }
 
 /* Card */
@@ -80,7 +83,7 @@ img {
 }
 
 .card:hover {
-  box-shadow: 0 24px 24px 0 rgba(0,0,0,0.4);
+  box-shadow: 0 26px 26px 0 rgba(0,0,0,0.8);
 }
 
 .card-text {
@@ -92,7 +95,7 @@ img {
 }
 
 
-/* Navigation & Social Media */
+/* Navigation & Links */
 .top-nav {
   display: Flexbox;
   justify-content: space-around;
@@ -110,6 +113,22 @@ foot-nav ul li {
   display: inline-block;
 }
 
+a:link {
+  text-decoration: none;
+  color: maroon;
+}
+
+a:hover {
+  background: black;
+  color: white;
+}
+
+a:active {
+  background: white;
+  border: 3px solid;
+  border-color: black;
+  color: black;
+}
 
 /* Typography */
 h1 {

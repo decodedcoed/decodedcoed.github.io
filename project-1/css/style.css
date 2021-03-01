@@ -32,19 +32,28 @@
 
 /* Layout Sections */
 header {
-  display: inline-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
   background-color: white;
   opacity: 1;
 }
 
+.push-left {
+  margin-right: auto;
+}
 
+.push-right {
+  margin-left: auto;
+}
 
 /* Flexbox */
 .flex-container {
   display: flex;
-  flex: 0 1 10%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
+
 
 /* Position */
 .fixed {
@@ -85,11 +94,11 @@ img {
 
 /* Navigation & Social Media */
 .top-nav {
-
+  display: Flexbox;
+  justify-content: space-around;
 }
 
 top-nav {
-  align-items: center;
   color: black;
 }
 

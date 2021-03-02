@@ -94,6 +94,12 @@ img {
   box-shadow: 0 3px 4px 0 rgba(0,0,0,0.4);
 }
 
+.card-button {
+  background-image: image();
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
 
 /* Navigation & Links */
 .top-nav {
@@ -147,6 +153,7 @@ a2:hover {
 }
 .button1 {
   background-color: inherit;
+  text-align: center;
 }
 
 .button1:hover {
@@ -154,6 +161,16 @@ a2:hover {
   color: black;
 }
 
+.button2 {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.button2:hover {
+  background-color: black;
+  color: white;
+}
 /* Typography */
 h1 {
   color: crimson;

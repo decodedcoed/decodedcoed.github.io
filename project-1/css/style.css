@@ -72,7 +72,7 @@ img {
 }
 
 .elipse-frame {
-  border-radius: 20%;
+  border-radius: 80%;
 }
 
 /* Card */
@@ -127,6 +127,30 @@ a:active {
   background: white;
   border: 3px solid;
   border-color: black;
+  color: black;
+}
+
+a2:link {
+  text-decoration: none;
+  color: black;
+}
+
+a2:hover {
+  background: inherit;
+  opacity; 0.6;
+}
+
+/* Buttons */
+.button {
+  text-decoration: none;
+  text-align: center;
+}
+.button1 {
+  background-color: inherit;
+}
+
+.button1:hover {
+  opacity: 0.6;
   color: black;
 }
 

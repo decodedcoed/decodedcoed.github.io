@@ -16,6 +16,11 @@
 
 .header {
   grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: white;
+  opacity: 1;
 }
 
 .side-nav {
@@ -32,12 +37,7 @@
 
 /* Layout Sections */
 header {
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  background-color: white;
-  opacity: 1;
-  border-bottom:
+
 }
 
 .push-left {
@@ -51,9 +51,21 @@ header {
 /* Flexbox */
 .flex-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
+.box-post {
+
+}
+
+.box-post-2 {
+
+}
+
+.box-post-3 {
+
+}
 
 
 /* Position */
@@ -94,25 +106,22 @@ img {
   box-shadow: 0 3px 4px 0 rgba(0,0,0,0.4);
 }
 
-.card-button {
-  background-image: image();
-  text-decoration: none;
-  text-align: center;
-  color: white;
-}
 
 /* Navigation & Links */
 .top-nav {
-  display: Flexbox;
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
 top-nav {
-  color: black;
+  text-decoration: none
 }
 
 top-nav ul li {
   display: inline-block;
+  justify-content: space-around;
+  padding: 0.5%;
 }
 
 foot-nav ul li {
@@ -121,7 +130,7 @@ foot-nav ul li {
 
 a:link {
   text-decoration: none;
-  color: maroon;
+  color: black;
 }
 
 a:hover {
@@ -153,11 +162,9 @@ a2:hover {
 }
 .button1 {
   background-color: inherit;
-  text-align: center;
 }
 
 .button1:hover {
-  opacity: 0.6;
   color: black;
 }
 
@@ -184,5 +191,16 @@ p {
   color: black;
 }
 
+.quote {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
 
 /* Media Queries */

@@ -11,7 +11,7 @@
     "header header header header"
     ". main main ."
     ". main main ."
-    ". footer footer .";
+    "footer footer footer footer";
 }
 
 .header {
@@ -25,12 +25,11 @@
 }
 
 #header1 {
-  width: 40%
-  justify-self: right;
+
 }
 
 #header2 {
-  width: 60%
+
 }
 
 .side-nav {
@@ -43,6 +42,10 @@
 
 .footer {
   grid-area: footer;
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
 /* Layout Sections */
@@ -56,22 +59,20 @@
 }
 
 /* Flexbox */
-.flex-container {
+.flex-container-featured {
+  display: flex;
+  margin: 10%;
+}
+
+.flex-container-posts {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  margin: 5%;
+  justify-content: space-between;
 }
 
 .box-post {
-
-}
-
-.box-post-2 {
-
-}
-
-.box-post-3 {
-
+  margin: 1%;
 }
 
 
@@ -181,6 +182,10 @@ a2:hover {
 /* Typography */
 h1 {
   color: crimson;
+}
+
+h6 {
+  font-size: 1em;
 }
 
 p1 {

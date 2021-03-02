@@ -17,10 +17,20 @@
 .header {
   grid-area: header;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
   background-color: white;
   opacity: 1;
+}
+
+#header1 {
+  width: 40%
+  justify-self: right;
+}
+
+#header2 {
+  width: 60%
 }
 
 .side-nav {
@@ -36,9 +46,6 @@
 }
 
 /* Layout Sections */
-header {
-
-}
 
 .push-left {
   margin-right: auto;
@@ -108,11 +115,6 @@ img {
 
 
 /* Navigation & Links */
-.top-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
 
 top-nav {
   text-decoration: none
@@ -120,8 +122,6 @@ top-nav {
 
 top-nav ul li {
   display: inline-block;
-  justify-content: space-around;
-  padding: 0.5%;
 }
 
 foot-nav ul li {

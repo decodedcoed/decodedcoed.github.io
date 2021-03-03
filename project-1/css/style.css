@@ -149,15 +149,15 @@ foot-nav ul li {
 
 a:link {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
-a:hover {
+a4:hover {
   background: black;
   color: white;
 }
 
-a:active {
+a4:active {
   background: white;
   border: 3px solid;
   border-color: black;
@@ -190,17 +190,23 @@ a2:hover {
 .button2 {
   background-color: white;
   color: black;
-  text-align: center;
 }
 
 .button2:hover {
   background-color: black;
   color: white;
 }
+
+
 /* Typography */
 h1 {
   color: crimson;
 }
+
+h1:hover {
+  color: black;
+}
+
 
 h6 {
   font-size: 1em;

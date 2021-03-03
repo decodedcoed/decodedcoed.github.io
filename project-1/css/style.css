@@ -6,11 +6,11 @@
 /* CSS Grid Layout */
 .grid-container {
   display: grid;
-  grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+  grid-template-columns: 0.5fr 1fr 1fr 0.1fr;
   grid-template-areas:
     "header header header header"
-    ". main main ."
-    ". main main ."
+    "side-nav main main ."
+    "side-nav main main ."
     "footer footer footer footer";
 }
 
@@ -24,12 +24,13 @@
   opacity: 1;
 }
 
-#header1 {
 
+#header1 {
+  margin-left: 2%;
 }
 
 #header2 {
-
+  margin-right: 4%:
 }
 
 .side-nav {
@@ -107,7 +108,7 @@ img {
 }
 
 .card-text {
-  padding: 8px 12px;
+  padding: 3px 6px;
 }
 
 .featured-card {
@@ -123,6 +124,15 @@ top-nav {
 
 top-nav ul li {
   display: inline-block;
+}
+
+side-nav {
+  text-decoration: none;
+}
+
+side-nav ul li {
+  display: flex;
+  flex-direction: column;
 }
 
 foot-nav ul li {

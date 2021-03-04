@@ -16,6 +16,7 @@
 
 .header {
   grid-area: header;
+  height: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -36,6 +37,12 @@
 
 .main {
   grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "welcome welcome"
+    "featured featured"
+    "posts posts"
 }
 
 .footer {
@@ -44,32 +51,29 @@
   background-color: black;
   color: white;
   text-align: center;
+  vertical-align: text-top;
 }
 
 /* Layout Sections */
 
-.push-left {
-  margin-right: auto;
-}
-
-.push-right {
-  margin-left: auto;
-}
 
 /* Flexbox */
 .flex-container {
+  grid-area: welcome;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .flex-container-featured {
+  grid-area: featured;
   display: flex;
   margin: 10%;
 }
 
 .flex-container-posts {
+  grid-area: posts;
   display: flex;
   flex-direction: row;
   margin: 5%;
@@ -114,8 +118,9 @@ img {
 }
 
 .card-text {
-  padding: 3px 6px;
+
 }
+
 
 .featured-card {
   box-shadow: 0 3px 4px 0 rgba(0,0,0,0.4);
@@ -138,16 +143,6 @@ top-nav ul li {
   margin: 1%;
 }
 
-side-nav {
-  text-decoration: none;
-  display: block;
-}
-
-side-nav ul li {
-  display: flex;
-  flex-direction: column;
-}
-
 foot-nav ul li {
   display: inline-block;
 }
@@ -157,27 +152,6 @@ a:link {
   color: inherit;
 }
 
-a4:hover {
-  background: black;
-  color: white;
-}
-
-a4:active {
-  background: white;
-  border: 3px solid;
-  border-color: black;
-  color: black;
-}
-
-a2:link {
-  text-decoration: none;
-  color: black;
-}
-
-a2:hover {
-  background: inherit;
-  opacity; 0.6;
-}
 
 /* Buttons */
 .button {
@@ -217,10 +191,6 @@ h6 {
   font-size: 1em;
   padding: 0;
   margin-bottom: 0;
-}
-
-p1 {
-  color: maroon;
 }
 
 p {

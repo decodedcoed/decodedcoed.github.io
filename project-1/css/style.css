@@ -16,7 +16,7 @@
 
 .header {
   grid-area: header;
-  height: 50px;
+  height: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -173,21 +173,21 @@ p {
 
 /* HOMEPAGE - START */
 /* Grid & Flexbox */
-main {
+#mainhome {
   display: grid;
   grid-gap: 1%;
-  grid-template-rows: 0.3fr 0.1fr 0.3fr;
+  grid-template-rows: 0.2fr 0.3fr 0.2fr;
   grid-template-areas:
-    "welcome"
+    "intro"
     "featured"
     "posts"
 }
 
 .intro {
-  grid-area: welcome;
+  grid-area: intro;
   align-items: center;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 6%;
 }
 
 .featured {
@@ -208,12 +208,11 @@ main {
   margin: 1%;
 }
 
-/* Layout Sections - Homepage */
-body {
-}
 /* HOMEPAGE - END */
 
 
 /* BLOGPOST - START */
+#mainpost {
 
+}
 /* BLOGPOST - END */

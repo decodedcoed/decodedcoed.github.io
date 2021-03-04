@@ -16,26 +16,25 @@
 
 .header {
   grid-area: header;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
   background-color: white;
   opacity: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 
 #header1 {
-  margin-left: 2%;
+  width: 30%
 }
 
 #header2 {
-  margin-right: 4%:
+  width: 70%
 }
 
-.side-nav {
-  grid-area: side-nav;
-}
 
 .main {
   grid-area: main;
@@ -131,6 +130,7 @@ top-nav {
 
 top-nav ul li {
   display: inline-block;
+  padding: 0.5%;
 }
 
 side-nav {

@@ -1,11 +1,11 @@
 
 
-
-/* Twitter Icon */
-
-/* CSS Grid Layout */
+/* ALL PAGES - START */
+/* CSS Grid Layout - All Pages*/
 .grid-container {
   display: grid;
+  width: 100vw;
+  height: 100vh;
   grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
   grid-template-areas:
     ". header header ."
@@ -25,7 +25,6 @@
   padding: 0;
 }
 
-
 #header1 {
   width: 30%
 }
@@ -34,15 +33,19 @@
   width: 70%
 }
 
+/* Header Position */
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: 1;
+}
 
 .main {
   grid-area: main;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "welcome welcome"
-    "featured featured"
-    "posts posts"
 }
 
 .footer {
@@ -54,49 +57,7 @@
   vertical-align: text-top;
 }
 
-/* Layout Sections */
-
-
-/* Flexbox */
-.flex-container {
-  grid-area: welcome;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 15%;
-}
-
-.flex-container-featured {
-  grid-area: featured;
-  display: flex;
-  margin: 10%;
-}
-
-.flex-container-posts {
-  grid-area: posts;
-  display: flex;
-  flex-direction: row;
-  margin: 5%;
-  justify-content: space-between;
-}
-
-.box-post {
-  margin: 1%;
-}
-
-
-/* Position */
-.fixed {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  opacity: 1;
-}
-
-/* Components: images, image captions, card, buttons */
+/* Components: images, image captions, cards, buttons */
 /* Images */
 img {
   width: 100%;
@@ -106,7 +67,11 @@ img {
   border-radius: 80%;
 }
 
-/* Card */
+/* Image Captions */
+
+
+
+/* Cards */
 .card {
   padding: 10px;
   box-shadow: 0 6px 8px 0 rgba(0,0,0,0.4);
@@ -124,32 +89,6 @@ img {
 
 .featured-card {
   box-shadow: 0 3px 4px 0 rgba(0,0,0,0.4);
-}
-
-
-/* Navigation & Links */
-
-top-nav {
-  text-decoration: none
-}
-
-top-nav ul {
-  margin: 0;
-  text-align: right;
-}
-
-top-nav ul li {
-  display: inline-block;
-  margin: 1%;
-}
-
-foot-nav ul li {
-  display: inline-block;
-}
-
-a:link {
-  text-decoration: none;
-  color: inherit;
 }
 
 
@@ -174,6 +113,27 @@ a:link {
 .button2:hover {
   background-color: black;
   color: white;
+}
+
+
+/* Navigation & Links */
+top-nav {
+  text-decoration: none
+}
+
+top-nav ul {
+  margin: 0;
+  text-align: right;
+}
+
+top-nav ul li {
+  display: inline-block;
+  margin: 1%;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
 }
 
 
@@ -208,5 +168,52 @@ p {
 .underline {
   text-decoration: underline;
 }
+/* ALL PAGES - END */
 
-/* Media Queries */
+
+/* HOMEPAGE - START */
+/* Grid & Flexbox */
+main {
+  display: grid;
+  grid-gap: 1%;
+  grid-template-rows: 0.3fr 0.1fr 0.3fr;
+  grid-template-areas:
+    "welcome"
+    "featured"
+    "posts"
+}
+
+.intro {
+  grid-area: welcome;
+  align-items: center;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.featured {
+  grid-area: featured;
+  display: flex;
+  flex-direction: row;
+}
+
+.posts {
+  grid-area: posts;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10%;
+  justify-content: space-between;
+}
+
+.box-post {
+  margin: 1%;
+}
+
+/* Layout Sections - Homepage */
+body {
+}
+/* HOMEPAGE - END */
+
+
+/* BLOGPOST - START */
+
+/* BLOGPOST - END */

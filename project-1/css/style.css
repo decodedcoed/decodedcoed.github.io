@@ -51,10 +51,11 @@
 .footer {
   grid-area: footer;
   display: block;
+  height: 80px;
   background-color: black;
   color: white;
+  font-size: 16pt;
   text-align: center;
-  vertical-align: text-top;
 }
 
 /* Components: images, image captions, cards, buttons */
@@ -88,6 +89,8 @@ img {
 
 
 .featured-card {
+  display: flex;
+  flex-direction: row;
   box-shadow: 0 3px 4px 0 rgba(0,0,0,0.4);
 }
 
@@ -148,9 +151,7 @@ h1:hover {
 
 
 h6 {
-  font-size: 1em;
-  padding: 0;
-  margin-bottom: 0;
+
 }
 
 p {
@@ -213,6 +214,17 @@ p {
 
 /* BLOGPOST - START */
 #mainpost {
+  display: flex;
+  flex-direction: row;
+}
 
+.mainpost1 {
+  display: flex;
+  width: 30%;
+}
+
+.mainpost2 {
+  display: flex;
+  width: 70%;
 }
 /* BLOGPOST - END */

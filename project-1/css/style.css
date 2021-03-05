@@ -30,7 +30,8 @@
 }
 
 #header2 {
-  width: 70%
+  width: 70%;
+  font-family: font-family: font-family: 'Roboto', sans-serif;
 }
 
 /* Header Position */
@@ -54,7 +55,7 @@
   height: 80px;
   background-color: black;
   color: white;
-  font-size: 16pt;
+  font-size: 12pt;
   text-align: center;
 }
 
@@ -141,29 +142,50 @@ a:link {
 
 
 /* Typography */
+html {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
 h1 {
   color: crimson;
+  font-family: 'Oswald', sans-serif;
 }
 
 h1:hover {
   color: black;
 }
 
-
-h6 {
-
+h2 {
+  font-family: 'Raleway', sans-serif;
 }
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+}
+
 
 p {
-
+  font-family: 'Raleway', sans-serif;
 }
 
-.quote {
+pq {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/* q {
+  quotes: auto;
+} */
+
+.italic {
   font-style: italic;
-}
-
-.bold {
-  font-weight: bold;
 }
 
 .underline {
@@ -187,8 +209,23 @@ p {
 .intro {
   grid-area: intro;
   align-items: center;
+  margin-top: 8%;
+}
+
+#tag {
+  text-align: left;
+}
+
+pt {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  color: crimson;
+  padding: 0;
+
+}
+
+#welcome {
   text-align: center;
-  margin-top: 6%;
 }
 
 .featured {

@@ -90,7 +90,7 @@ img {
 
 
 .featured-card {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   box-shadow: 0 3px 4px 0 rgba(0,0,0,0.4);
 }
@@ -231,7 +231,7 @@ pt {
 .featured {
   grid-area: featured;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .posts {
@@ -250,18 +250,27 @@ pt {
 
 
 /* BLOGPOST - START */
+
 #mainpost {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "image author"
+    "image text"
 }
 
-.mainpost1 {
-  display: flex;
-  width: 30%;
+.author {
+  background-color: pink;
 }
 
-.mainpost2 {
-  display: flex;
-  width: 70%;
+.image {
+  grid-area: image;
+  background-image: url('images/20201115-img-2016-2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text {
+  grid-area: text;
 }
 /* BLOGPOST - END */

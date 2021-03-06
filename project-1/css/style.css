@@ -129,6 +129,7 @@ img {
 }
 .button1 {
   background-color: inherit;
+
 }
 
 .button1:hover {
@@ -166,6 +167,10 @@ a:link {
   color: inherit;
 }
 
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* Typography */
 html {

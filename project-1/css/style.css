@@ -52,7 +52,8 @@
 .footer {
   grid-area: footer;
   display: block;
-  height: 80px;
+  height: 90px;
+  margin-bottom: 0;
   background-color: black;
   color: white;
   font-size: 12pt;
@@ -84,14 +85,7 @@ img {
   box-shadow: 0 26px 26px 0 rgba(0,0,0,0.8);
 }
 
-.card-text {
-
-}
-
-
 .featured-card {
-  display: inline-flex;
-  flex-direction: row;
   box-shadow: 0 3px 4px 0 rgba(0,0,0,0.4);
 }
 
@@ -260,7 +254,9 @@ pt {
 }
 
 .author {
+  grid-area: author;
   background-color: pink;
+  text-align: right;
 }
 
 .image {

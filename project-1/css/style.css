@@ -3,14 +3,20 @@
 /* ALL PAGES - START */
 /* CSS Grid Layout - All Pages*/
 
+header, main, aside, footer {
+  border: 1px solid;
+}
+
+]
+
 /* Small Screens */
 .container {
   display: grid;
-  width: 90vw;
+  grid-gap: 1%;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
   grid-template-areas:
     "header"
-    "main"
     "main"
     "footer";
   }
@@ -19,12 +25,11 @@
 @media (min-width: 600px) and (max-width:900px) {
   .container {
     display: grid;
-    width: 100vw;
-    height: 100vh;
+    grid-gap: 1%;
     grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-template-areas:
       ". header header ."
-      ". main main ."
       ". main main ."
       "footer footer footer footer";
   }
@@ -34,13 +39,12 @@
 @media (min-width:901px) {
   .container {
     display: grid;
-    width: 100vw;
-    height: 100vh;
+    grid-gap: 1%;
     grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-template-areas:
       ". header header header ."
-      ". main main main sidebar ."
-      ". main main main sidebar ."
+      ". main main aside ."
       "footer footer footer footer footer";
   }
 }
@@ -48,7 +52,6 @@
 
 .header {
   grid-area: header;
-  height: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -84,7 +87,6 @@
 .footer {
   grid-area: footer;
   display: block;
-  height: 90px;
   margin-bottom: 0;
   background-color: black;
   color: white;
@@ -102,6 +104,11 @@ img {
   border-radius: 80%;
 }
 
+.caption {
+  text-align: right;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 0.75em;
+}
 /* Image Captions */
 
 
@@ -228,9 +235,11 @@ pq {
 /* HOMEPAGE - START */
 /* Grid & Flexbox */
 #mainhome {
+  border: 1px solid;
+  border-color: blue;
   display: grid;
   grid-gap: 1%;
-  grid-template-rows: 0.2fr 0.3fr 0.2fr;
+  grid-template-rows: 1fr 2fr 1fr;
   grid-template-areas:
     "intro"
     "featured"
@@ -238,9 +247,9 @@ pq {
 }
 
 .intro {
+  border: 1px solid;
+  border-color: inherit;
   grid-area: intro;
-  align-items: center;
-  margin-top: 8%;
 }
 
 #tag {
@@ -260,12 +269,14 @@ pt {
 }
 
 .featured {
+  border: 1px solid;
+  border-color: inherit;
   grid-area: featured;
-  display: flex;
-  flex-direction: column;
 }
 
 .posts {
+  border: 1px solid;
+  border-color: inherit;
   grid-area: posts;
   display: flex;
   flex-direction: row;
@@ -284,19 +295,26 @@ pt {
 
 #mainpost {
   display: grid;
+  border: 1px solid;
+  border-color: blue;
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr;
   grid-template-areas:
     "image author"
     "image text"
 }
 
 .author {
+  border: 1px solid;
+  border-color: inherit;
   grid-area: author;
   background-color: pink;
   text-align: right;
 }
 
 .image {
+  border: 1px solid;
+  border-color: inherit;
   grid-area: image;
   background-image: url('images/20201115-img-2016-2.jpg');
   background-size: contain;
@@ -304,6 +322,8 @@ pt {
 }
 
 .text {
+  border: 1px solid;
+  border-color: inherit;
   grid-area: text;
 }
 /* BLOGPOST - END */

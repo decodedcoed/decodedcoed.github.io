@@ -21,7 +21,6 @@ header, main, aside, footer {
     "aside"
     "footer";
   }
-}
 
   .item {
     background-color: coral;
@@ -137,8 +136,8 @@ main {
   grid-area: main;
   display: grid;
   grid-gap: 1%;
-  grid-template-columns: 2fr 2.5;
-  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 2;
+  grid-template-rows: 0.5fr 2fr;
   grid-template-areas:
     "image author"
     "image text";
@@ -160,7 +159,7 @@ aside {
   grid-area: aside;
   display: flex;
   flex-direction: row;
-  
+  align-items:flex-start;
 }
 
 #a1 {
@@ -184,10 +183,9 @@ footer {
 @media (min-width:901px) {
 #container {
   display: grid;
-  height: 100vh;
   background-color: lightgreen;
   grid-gap: 10px;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 0.5fr;
   grid-template-rows: 0.5fr 2fr 0.1fr;
   grid-template-areas:
     "header header"
@@ -223,7 +221,7 @@ main {
   grid-area: main;
   display: grid;
   grid-gap: 1%;
-  grid-template-columns: 2fr 2.5;
+  grid-template-columns: 2fr 3fr;
   grid-template-rows: 1fr 2fr;
   grid-template-areas:
     "image author"
@@ -246,7 +244,7 @@ aside {
   grid-area: aside;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
 }
 
 #a1 {

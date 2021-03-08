@@ -46,6 +46,22 @@ main {
 
 aside {
   grid-area: aside;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#a1 {
+
+}
+
+#a2 {
+
+}
+
+#a3 {
+
 }
 
 footer {

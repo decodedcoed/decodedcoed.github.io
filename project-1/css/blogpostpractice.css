@@ -9,13 +9,12 @@ header, main, aside, footer {
 
 
 /* Small Screens */
-
 #container {
   display: grid;
   background-color: lightgreen;
   grid-gap: 10px;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 1fr 0.5fr 0.1fr;
+  grid-template-rows: 0.05fr 1fr 0.25fr 0.05fr;
   grid-template-areas:
     "header"
     "main"
@@ -33,7 +32,7 @@ header, main, aside, footer {
     display: grid;
     grid-gap: 1%;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.05fr 0.01fr;
     grid-template-areas:
       "title"
       "nav";
@@ -101,7 +100,7 @@ header, main, aside, footer {
   background-color: lightgreen;
   grid-gap: 10px;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 1fr 0.5fr 0.1fr;
+  grid-template-rows: 0.05fr 1fr 0.25fr 0.05fr;
   grid-template-areas:
     "header"
     "main"
@@ -136,7 +135,7 @@ header, main, aside, footer {
     grid-area: main;
     display: grid;
     grid-gap: 1%;
-    grid-template-columns: 1fr 2;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 0.5fr 2fr;
     grid-template-areas:
       "image author"

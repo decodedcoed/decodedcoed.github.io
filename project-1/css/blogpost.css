@@ -31,11 +31,11 @@ header, main, aside, footer {
   header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
-      "hd1 hd1"
-      "hd2 hd3";
+      "hd1"
+      "hd2";
   }
 
     #hd1 {
@@ -44,12 +44,8 @@ header, main, aside, footer {
     }
 
     #hd2 {
-    grid-area: hd2;
-    margin-left: 3%
-    }
-
-    #hd3 {
       grid-area: hd3;
+      display: inline-block;
       margin-right: 3%;
       font-family: font-family: font-family: 'Roboto', sans-serif;
     }

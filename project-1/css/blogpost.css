@@ -30,20 +30,26 @@ header, main, aside, footer {
 
   header {
     grid-area: header;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: baseline;
-    padding: 0;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "hd1 hd1"
+      "hd2 hd3";
   }
 
     #hd1 {
-      width: 25%;
-      margin-left: 3%;
+    grid-area: hd1;
+    margin-left: 3%;
     }
 
     #hd2 {
-      width: 75%;
+    grid-area: hd2;
+    margin-left: 3%
+    }
+
+    #hd3 {
+      grid-area: hd3;
       margin-right: 3%;
       font-family: font-family: font-family: 'Roboto', sans-serif;
     }
@@ -63,7 +69,7 @@ header, main, aside, footer {
     display: grid;
     grid-gap: 1%;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.02fr 0.01fr 0.5fr;
+    grid-template-rows: 0.5fr 0.01fr 0.5fr;
     grid-template-areas:
       "image"
       "author"
@@ -72,8 +78,20 @@ header, main, aside, footer {
 
     #mn1 {
       grid-area: image;
-      padding: 15%;
-      padding-bottom: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "img-container";
+      border-color: blue;
+      border: 3px solid;
+    }
+
+    .img-container {
+      grid-area: img-container;
+      display: flex;
+
+      justify-content: center;
+
     }
 
     #mn2 {
@@ -122,31 +140,6 @@ header, main, aside, footer {
     "footer";
   }
 
-  .item {
-    background-color: coral;
-    padding: 10%;
-  }
-
-  header {
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: baseline;
-    padding: 0;
-  }
-
-    #hd1 {
-      width: 25%;
-      margin-left: 3%;
-    }
-
-    #hd2 {
-      width: 75%;
-      margin-right: 3%;
-      font-family: font-family: font-family: 'Roboto', sans-serif;
-    }
-
   main {
     grid-area: main;
     display: grid;
@@ -168,25 +161,6 @@ header, main, aside, footer {
 
     #m3 {
       grid-area: text;
-
-    }
-
-
-  footer {
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-    #ft1 {
-      width: auto;
-      margin: 1%;
-      padding: 0;
-      text-align: center;
-      font-family: 'PT Sans Narrow', sans-serif;
-      color: white;
-      font-size: 12pt;
     }
 }
 
@@ -204,31 +178,6 @@ header, main, aside, footer {
     "main"
     "footer";
   }
-
-  .item {
-    background-color: coral;
-    padding: 10%;
-  }
-
-  header {
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: baseline;
-    padding: 0;
-  }
-
-    #hd1 {
-      width: 25%;
-      margin-left: 3%;
-    }
-
-    #hd2 {
-      width: 75%;
-      margin-right: 3%;
-      font-family: font-family: font-family: 'Roboto', sans-serif;
-    }
 
   main {
     grid-area: main;
@@ -251,19 +200,6 @@ header, main, aside, footer {
 
     #mn3 {
       grid-area: text;
-    }
-
-
-  footer {
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-    #ft1 {
-      width: auto;
-      margin: 1%;
     }
 }
 /* BLOGPOST LAYOUT END */
@@ -391,7 +327,9 @@ p {
 q {
   quotes: auto;
   font-family: 'PT Sans Narrow', sans-serif;
-}/* COMPONENTS: images, image captions, cards, buttons */
+}
+
+/* COMPONENTS: images, image captions, cards, buttons */
   /* Images */
 img {
   width: 100%;
@@ -405,6 +343,7 @@ img {
   /* Image Captions */
 .caption {
   text-align: right;
+  color: grey;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 0.75em;
 }
@@ -433,7 +372,6 @@ img {
 }
 .button1 {
   background-color: inherit;
-
 }
 
 .button1:hover {
@@ -458,7 +396,6 @@ top-nav {
 
 top-nav ul {
   margin: 0;
-  text-align: right;
 }
 
 top-nav ul li {
@@ -494,25 +431,13 @@ h1:hover {
   color: black;
 }
 
-h2 {
-  font-family: 'Raleway', sans-serif;
-}
-
-h3 {
-  font-family: 'Raleway', sans-serif;
-}
-
-h4 {
-  font-family: 'Raleway', sans-serif;
-}
-
-p {
+h2, h3, h4, p {
   font-family: 'Raleway', sans-serif;
 }
 
 q {
   quotes: auto;
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .italic {

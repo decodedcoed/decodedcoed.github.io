@@ -45,7 +45,6 @@ header, main, aside, footer {
 
     #hd2 {
       grid-area: hd2;
-      
       margin-right: 3%;
       font-family: font-family: 'Roboto', sans-serif;
     }

@@ -16,7 +16,7 @@ header, main, aside, footer {
   background-color: white;
   grid-gap: 5px;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.02fr 2fr 0.02fr;
+  grid-template-rows: 20px 2fr 0.02fr;
   grid-template-areas:
     "header"
     "main"
@@ -44,10 +44,10 @@ header, main, aside, footer {
     }
 
     #hd2 {
-      grid-area: hd3;
-      display: inline-block;
+      grid-area: hd2;
+      
       margin-right: 3%;
-      font-family: font-family: font-family: 'Roboto', sans-serif;
+      font-family: font-family: 'Roboto', sans-serif;
     }
 
     .fixed {
@@ -215,6 +215,7 @@ img {
   /* Image Captions */
 .caption {
   text-align: right;
+  color: grey;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 0.75em;
 }
@@ -323,117 +324,6 @@ p {
 q {
   quotes: auto;
   font-family: 'PT Sans Narrow', sans-serif;
-}
-
-/* COMPONENTS: images, image captions, cards, buttons */
-  /* Images */
-img {
-  width: 100%;
-}
-
-.elipse-frame {
-  border-radius: 80%;
-}
-
-
-  /* Image Captions */
-.caption {
-  text-align: right;
-  color: grey;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 0.75em;
-}
-
-
-  /* Cards */
-.card {
-  padding: 10px;
-  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.4);
-  transition: 0.3s;
-}
-
-.card:hover {
-  box-shadow: 0 26px 26px 0 rgba(0,0,0,0.8);
-}
-
-.featured-card {
-  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.4);
-}
-
-
-  /* Buttons */
-.button {
-  text-decoration: none;
-  text-align: center;
-}
-.button1 {
-  background-color: inherit;
-}
-
-.button1:hover {
-  color: black;
-}
-
-.button2 {
-  background-color: white;
-  color: black;
-}
-
-.button2:hover {
-  background-color: black;
-  color: white;
-}
-
-
-  /* Navigation & Links */
-top-nav {
-  text-decoration: none
-}
-
-top-nav ul {
-  margin: 0;
-}
-
-top-nav ul li {
-  display: inline-block;
-  margin: 1%;
-}
-
-a:link {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
-  /* Typography */
-html {
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Oswald', sans-serif;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-  color: crimson;
-  font-family: 'Oswald', sans-serif;
-}
-
-h1:hover {
-  color: black;
-}
-
-h2, h3, h4, p {
-  font-family: 'Raleway', sans-serif;
-}
-
-q {
-  quotes: auto;
-  font-family: 'Roboto', sans-serif;
 }
 
 .italic {

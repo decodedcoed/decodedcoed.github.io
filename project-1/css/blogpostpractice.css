@@ -31,11 +31,10 @@ header, main, aside, footer {
     grid-area: header;
     display: grid;
     grid-gap: 1%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 0.05fr 0.01fr;
     grid-template-areas:
-      "title"
-      "nav";
+      "title nav";
   }
 
     #h1 {

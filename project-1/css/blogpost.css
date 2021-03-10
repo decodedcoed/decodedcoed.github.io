@@ -73,7 +73,6 @@ header, main, aside, footer {
 
     #mn1 {
       grid-area: image;
-
       padding: 15%;
       padding-bottom: 0;
     }
@@ -152,7 +151,7 @@ header, main, aside, footer {
     grid-area: main;
     display: grid;
     grid-gap: 1%;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 2fr;
     grid-template-areas:
       "image author"
@@ -169,6 +168,7 @@ header, main, aside, footer {
 
     #m3 {
       grid-area: text;
+
     }
 
 
@@ -233,8 +233,8 @@ header, main, aside, footer {
     grid-area: main;
     display: grid;
     grid-gap: 1%;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr;
     grid-template-areas:
       "image author"
       "image text";

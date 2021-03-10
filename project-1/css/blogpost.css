@@ -50,7 +50,7 @@ header, main, aside, footer {
     }
 
     #hd3 {
-
+      grid-area: hd3;
     }
 
     .fixed {
@@ -272,7 +272,6 @@ top-nav {
 
 top-nav ul {
   margin: 0;
-  text-align: right;
 }
 
 top-nav ul li {

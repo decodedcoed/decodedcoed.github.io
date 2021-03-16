@@ -82,27 +82,25 @@ header, main, aside, footer {
 
     #mn1 {
       grid-area: image;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "img-container";
-      border-color: blue;
-      border: 3px solid;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .img-container {
-      grid-area: img-container;
-      display: flex;
-
-      justify-content: center;
-
+    .feat-img {
+      width: 75%;
+      height: 75%;
     }
 
     #mn2 {
       grid-area: author;
       display: flex;
-      justify-content: flex-end;
+      flex-direction: column;
+      align-items: flex-end;
+      vertical-align: middle;
       padding-right: 5%;
+      text-align: right;
+      font-size: 75%;
     }
 
     #mn3 {
@@ -219,13 +217,20 @@ img {
   border-radius: 80%;
 }
 
-
+.avatar {
+  vertical-align: middle;
+  width: 25%;
+  height: 25%;
+  border-radius: 50%
+}
   /* Image Captions */
 .caption {
   text-align: right;
   color: grey;
   font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 0.75em;
+  font-size: 75%;
+  padding: 0;
+  margin: 0;
 }
 
 

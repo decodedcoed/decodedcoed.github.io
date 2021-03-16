@@ -23,11 +23,6 @@ header, main, aside, footer {
     "footer";
   }
 
-  .item {
-    background-color: inherit;
-    padding: 10%;
-  }
-
   header {
     grid-area: header;
     display: grid;
@@ -53,7 +48,6 @@ header, main, aside, footer {
 
     #hd3 {
       grid-area: hd3;
-      vertical-align: baseline;
       text-align: right;
       margin-right: 3%;
     }
@@ -135,7 +129,7 @@ header, main, aside, footer {
   background-color: white;
   grid-gap: 10px;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.05fr 2fr 0.05fr;
+  grid-template-rows: 0.05fr 1.5fr 0.05fr;
   grid-template-areas:
     "header"
     "main"
@@ -213,10 +207,6 @@ img {
   width: 100%;
 }
 
-.elipse-frame {
-  border-radius: 80%;
-}
-
 .avatar {
   vertical-align: middle;
   width: 25%;
@@ -225,7 +215,6 @@ img {
 }
   /* Image Captions */
 .caption {
-  text-align: right;
   color: grey;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 75%;

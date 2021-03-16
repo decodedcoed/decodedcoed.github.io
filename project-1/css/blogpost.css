@@ -64,6 +64,7 @@ header, main, aside, footer {
 
   main {
     grid-area: main;
+    margin-top: 20px;
     display: grid;
     grid-gap: 1%;
     grid-template-columns: 1fr;
@@ -101,8 +102,7 @@ header, main, aside, footer {
 
     #mn3 {
       grid-area: text;
-      padding: 5%;
-      padding-top: 0;
+      padding: 0 5% 5% 5%;
     }
 
   footer {
@@ -205,9 +205,6 @@ header, main, aside, footer {
 
 /* COMPONENTS: images, image captions, cards, buttons */
   /* Images */
-img {
-  width: 100%;
-}
 
 .avatar {
   vertical-align: middle;
@@ -224,31 +221,14 @@ img {
   margin: 0;
 }
 
-
-  /* Cards */
-.card {
-  padding: 10px;
-  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.4);
-  transition: 0.3s;
-}
-
-.card:hover {
-  box-shadow: 0 26px 26px 0 rgba(0,0,0,0.8);
-}
-
-.featured-card {
-  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.4);
-}
-
-
   /* Buttons */
 .button {
   text-decoration: none;
   text-align: center;
 }
+
 .button1 {
   background-color: inherit;
-
 }
 
 .button1:hover {

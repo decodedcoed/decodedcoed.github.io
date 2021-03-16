@@ -16,7 +16,7 @@ header, main, aside, footer {
   background-color: white;
   grid-gap: 5px;
   grid-template-columns: 1fr;
-  grid-template-rows: 20px 2fr 0.02fr;
+  grid-template-rows: 20px 1.5fr 0.02fr;
   grid-template-areas:
     "header"
     "main"
@@ -79,6 +79,8 @@ header, main, aside, footer {
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 0;
+      margin: 0;
     }
 
     .feat-img {
@@ -129,7 +131,7 @@ header, main, aside, footer {
   background-color: white;
   grid-gap: 10px;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.05fr 1.5fr 0.05fr;
+  grid-template-rows: 0.05fr 2fr 0.05fr;
   grid-template-areas:
     "header"
     "main"

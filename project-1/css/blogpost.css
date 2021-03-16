@@ -64,7 +64,7 @@ header, main, aside, footer {
 
   main {
     grid-area: main;
-    margin-top: 20px;
+    margin-top: 100px;
     display: grid;
     grid-gap: 1%;
     grid-template-columns: 1fr;
@@ -85,8 +85,7 @@ header, main, aside, footer {
     }
 
     .feat-img {
-      width: 75%;
-      height: 75%;
+      width: 90%;
     }
 
     #mn2 {
@@ -98,6 +97,13 @@ header, main, aside, footer {
       padding-right: 5%;
       text-align: right;
       font-size: 75%;
+    }
+
+    .avatar {
+      vertical-align: middle;
+      width: 20%;
+      height: 20%;
+      border-radius: 50%
     }
 
     #mn3 {
@@ -206,12 +212,6 @@ header, main, aside, footer {
 /* COMPONENTS: images, image captions, cards, buttons */
   /* Images */
 
-.avatar {
-  vertical-align: middle;
-  width: 25%;
-  height: 25%;
-  border-radius: 50%
-}
   /* Image Captions */
 .caption {
   color: grey;

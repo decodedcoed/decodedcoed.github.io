@@ -52,7 +52,7 @@ header, main, aside, footer {
       margin-right: 3%;
     }
 
-    .fixed {
+    .sticky {
       position: sticky;
       width: 100%;
       top: 0;

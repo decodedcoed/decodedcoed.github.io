@@ -2,27 +2,33 @@
 <html>
   <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
       <script src="https://kit.fontawesome.com/32bb5d651f.js" crossorigin="anonymous"></script>
       <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald&family=PT+Sans+Narrow&family=Raleway:ital,wght@0,200;0,600;1,100&family=Roboto&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald&family=PT+Sans+Narrow&family=Raleway:ital,wght@0,200;0,600;1,100&family=Roboto&display=swap" rel="stylesheet">
       <title>Blog Homepage</title>
       <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <div class="container">
-      <div class="fixed">
+    <div id="container">
+      <div class="sticky">
         <header>
-          <div id="h1">
+          <div id="hd1">
             <a href="index.html"><h1>blablaBlog</h1></a>
           </div>
-          <div id="h2">
+          <div id="hd2">
             <top-nav>
               <ul>
                 <li><a class="button2" href="#"> Posts </a></li>
                 <li><a class="button2" href="#"> About </a></li>
                 <li><a class="button2" href="#"> Contact </a></li>
                 <li><a class="button2" href="#"> Follow </a></li>
-                <li> | </li>
+              </ul>
+            </top-nav>
+          </div>
+          <div id="hd3">
+            <top-nav>
+              <ul>
                 <li><a class="button2" href="#"><i class="fab fa-linkedin-in"></i></a></li>
                 <li><a class="button2" href="#"><i class="fab fa-twitter"></i></a></li>
                 <li><a class="button2" href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -32,15 +38,14 @@
         </header>
       </div>
       <main>
-        <div id="mainhome">
-          <section class="intro">
-          <pt id="tag">...a bla log</pt>
-          <div id="welcome">
-          <h2>~ welcome ~</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur nibh at laoreet mattis. Aenean eleifend metus libero. Integer iaculis sem sed luctus lobortis. Maecenas vitae est lobortis, pulvinar diam a, condimentum metus.</p>
-          </div>
-        </section>
-        <article class="featured">
+        <div id="mn1">
+          <p class="tag">...a bla log</p>
+            <div class="welcome">
+              <h2>~ welcome ~</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur nibh at laoreet mattis. Aenean eleifend metus libero. Integer iaculis sem sed luctus lobortis. Maecenas vitae est lobortis, pulvinar diam a, condimentum metus.</p>
+            </div>
+        </div>
+        <div id="mn2">
           <a class="button1" href="blogpost-featured.html">
           <div class="card">
             <img src="images/20201115-img-2016-2.jpg" alt="autumn leaves"/>
@@ -52,8 +57,8 @@
               <a class="button2"><i class="fas fa-share"></i></a>
           </div>
         </a>
-        </article>
-        <section class="posts">
+      </div>
+        <div id="mn3">
           <a class="button1" href="#">
             <div class="box-post">
             <div class="card">
@@ -90,8 +95,7 @@
             </div>
           </div>
           </a>
-        </section>
-      </div>
+        </div>
       </main>
       <footer>
         <div id="ft1">

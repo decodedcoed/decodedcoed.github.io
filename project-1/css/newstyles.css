@@ -9,22 +9,9 @@
 
 /* COMPONENTS: images, image captions, cards, buttons */
   /* Images */
-img {
-  width: 100%;
-}
-
-.elipse-frame {
-  border-radius: 80%;
-}
 
 
   /* Image Captions */
-.caption {
-  text-align: right;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 0.75em;
-}
-
 
   /* Cards */
 .card {

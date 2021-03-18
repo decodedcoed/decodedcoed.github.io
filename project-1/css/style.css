@@ -13,10 +13,10 @@ header, main, aside, footer {
 /* Small Screens */
 #container {
   display: grid;
-  background-color: white;
+  background-color:
   grid-gap: 1%;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 0.02fr 2.5fr 0.02fr;
   grid-template-areas:
     "header"
     "main"
@@ -31,7 +31,7 @@ header, main, aside, footer {
     grid-template-areas:
       "hd1 hd3"
       "hd2 hd2";
-  }
+    }
 
     #hd1 {
     grid-area: hd1;
@@ -62,17 +62,18 @@ header, main, aside, footer {
       opacity: 1;
     }
 
-    main {
-      grid-area: main;
-      border: 1px solid;
-      border-color: blue;
-      display: grid;
-      grid-gap: 1%;
-      grid-template-rows: 1fr 2fr 1fr;
-      grid-template-areas:
-        "intro"
-        "featured"
-        "posts"
+  main {
+    grid-area: main;
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "intro"
+      "featured"
+      "posts";
+    border: 1px solid;
+    border-color: blue;
     }
 
     #mn1 {
@@ -81,38 +82,33 @@ header, main, aside, footer {
       border-color: inherit;
     }
 
-    .tag {
-      text-align: left;
-      font-family: 'Oswald', sans-serif;
-      font-weight: bold;
-      color: maroon;
-      padding: 0;
-    }
-
     .welcome {
       text-align: center;
     }
 
     #mn2 {
+      grid-area: featured;
       border: 1px solid;
       border-color: inherit;
-      grid-area: featured;
+    }
+
+    .feat-img {
+      width: 50%;
     }
 
     #mn3 {
-      border: 1px solid;
-      border-color: inherit;
       grid-area: posts;
       display: flex;
       flex-direction: row;
       margin-bottom: 10%;
       justify-content: space-between;
+      border: 1px solid;
+      border-color: inherit;
     }
 
     .box-post {
       margin: 1%;
     }
-
 
   footer {
     grid-area: footer;
@@ -163,6 +159,9 @@ header, main, aside, footer {
 
 /* Components: images, image captions, cards, buttons */
 /* Images */
+img {
+  width: 100%;
+}
 
 /* Image Captions */
 .caption {

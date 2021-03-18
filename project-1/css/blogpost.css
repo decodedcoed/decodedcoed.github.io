@@ -136,7 +136,7 @@ header, main, aside, footer {
   background-color: white;
   grid-gap: 10px;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.05fr 2fr 0.05fr;
+  grid-template-rows: 0.02fr 2fr 0.02fr;
   grid-template-areas:
     "header"
     "main"

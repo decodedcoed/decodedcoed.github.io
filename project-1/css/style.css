@@ -5,18 +5,13 @@ body {
   height: 100vh;
 }
 
-header, main, aside, footer {
-  border: 1px solid;
-}
-
-
 /* Small Screens */
 #container {
   display: grid;
   background-color: white;
   grid-gap: 1%;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.02fr 0.5fr 0.3fr .02fr;
+  grid-template-rows: 0.02fr 0.2fr 0.1fr .02fr;
   grid-template-areas:
     "header"
     "main"
@@ -32,6 +27,7 @@ header, main, aside, footer {
     grid-template-areas:
       "hd1 hd3"
       "hd2 hd2";
+    border-bottom: dotted;  
     }
 
     #hd1 {
@@ -53,27 +49,15 @@ header, main, aside, footer {
       margin-right: 3%;
     }
 
-    .sticky {
-      position: sticky;
-      width: 100%;
-      top: 0;
-      left: 0;
-      right: 0;
-      background-color: white;
-      opacity: 1;
-    }
-
   main {
     grid-area: main;
     display: grid;
     grid-gap: 1%;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.4fr;
+    grid-template-rows: 0.1fr 0.1fr;
     grid-template-areas:
       "intro"
       "featured";
-    border: 1px solid;
-    border-color: blue;
     }
 
     #mn1 {
@@ -83,22 +67,28 @@ header, main, aside, footer {
 
     #mn2 {
       grid-area: featured;
-      display: flex;
-      align-content: center;
     }
 
     .feat-card {
-      width: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-self: center;
+    }
+
+    #fc1 {
+      padding: 3%;
+    }
+
+    #fc2 {
+      padding: 3%;
     }
 
   aside {
     grid-area: aside;
     display: flex;
     flex-direction: row;
-    margin-bottom: 3%;
     justify-content: space-between;
-    border: 1px solid;
-    border-color: inherit;
   }
 
   footer {
@@ -127,7 +117,7 @@ header, main, aside, footer {
     background-color: white;
     grid-gap: 1%;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.02fr 0.3fr 0.1fr 0.02fr;
+    grid-template-rows: 0.02fr 0.2fr 0.1fr 0.02fr;
     grid-template-areas:
       "header"
       "main"
@@ -135,28 +125,6 @@ header, main, aside, footer {
       "footer";
     }
 
-      .feat-card {
-        display: flex;
-        flex-direction: row;
-
-      }
-
-      #feat-card1 {
-
-      }
-
-      #feat-card2 {
-        padding: 3%;
-      }
-
-    aside {
-      grid-area: aside;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      border: 1px solid;
-      border-color: inherit;
-    }
   }
 
 /* Large Screens */
@@ -165,52 +133,12 @@ header, main, aside, footer {
     display: grid;
     background-color: white;
     grid-gap: 1%;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 0.05fr 2fr 0.05fr;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 0.02fr 1fr 0.02fr;
     grid-template-areas:
       "header header"
       "main aside"
       "footer footer";
-  }
-
-  main {
-    grid-area: main;
-    display: grid;
-    grid-gap: 1%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.2fr;
-    grid-template-areas:
-      "intro"
-      "featured";
-    border: 1px solid;
-    border-color: blue;
-    }
-
-      #mn1 {
-        grid-area: intro;
-        text-align: center;
-        border: 1px solid;
-        border-color: inherit;
-      }
-
-      #mn2 {
-        grid-area: featured;
-        border: 1px solid;
-        border-color: inherit;
-      }
-
-      .feat-img {
-        width: 90%;
-      }
-
-    aside {
-      grid-area: aside;
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 10%;
-      justify-content: space-between;
-      border: 1px solid;
-      border-color: inherit;
     }
   }
 

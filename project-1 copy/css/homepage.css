@@ -6,7 +6,7 @@ body {
 }
 
 /* Small Screens */
-#container {
+#homecontainer {
   display: grid;
   background-color: white;
   grid-gap: 1%;
@@ -65,7 +65,7 @@ body {
 
 /* Medium Screens */
 @media (min-width: 600px) and (max-width:900px) {
-  #container {
+  #homecontainer {
     display: grid;
     background-color: white;
     grid-gap: 1%;
@@ -81,7 +81,7 @@ body {
 
 /* Large Screens */
 @media (min-width:901px) {
-  #container {
+  #homecontainer {
     display: grid;
     background-color: white;
     grid-gap: 1%;
